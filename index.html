@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Encriptacion</title>
+    <link rel="stylesheet" href="index.css">
+</head>
+
+<body>
+    <!--contenedor de toda pagina-->
+    <div class="container">
+        <!--contenedor de texto-->
+        <div class="encriptar">
+            <textarea name="texto" class="texto" id="texto" cols="30" rows="10"
+                placeholder="Ingresa el texto aquí"></textarea>
+
+            <div class="terminos">
+                <p>Solo letras minúsculas y sin acentos.</p>
+            </div>
+            <!--contenedor de botones-->
+            <div class="botones">
+                <button class="btn-encriptar" type="button" onclick="encriptar()">
+                    Encriptar
+                </button>
+                <input type="button" class="btn-desencriptar" value="Desencriptar" onclick="desencriptar()" />
+            </div>
+        </div>
+        <!--contenedor de texto encriptado-->
+        <div class="encriptado">
+            <img src="img/Muñeco.png" alt="" id="muñeco" />
+            <div class="mensaje-encriptado" id="mensaje-encriptado">
+                <h2 id="titulo-mensaje">Ningún mensaje fue encontrado</h2>
+                <p id="parrafo">
+                    Ingresa el texto que deseas encriptar o desencriptar
+                </p>
+            </div>
+        </div>
+    </div>
+</body>
+
+</html>
