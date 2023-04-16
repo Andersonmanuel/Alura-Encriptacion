@@ -7,38 +7,29 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Encriptacion</title>
     <link rel="stylesheet" href="index.css">
+    <script type="text/javascript" src="index.js"></script>
 </head>
 
 <body>
-    <!--contenedor de toda pagina-->
     <div class="container">
-        <!--contenedor de texto-->
-        <div class="encriptar">
-            <textarea name="texto" class="texto" id="texto" cols="30" rows="10"
-                placeholder="Ingresa el texto aquí"></textarea>
-
-            <div class="terminos">
-                <p>Solo letras minúsculas y sin acentos.</p>
-            </div>
-            <!--contenedor de botones-->
-            <div class="botones">
-                <button class="btn-encriptar" type="button" onclick="encriptar()">
-                    Encriptar
-                </button>
-                <input type="button" class="btn-desencriptar" value="Desencriptar" onclick="desencriptar()" />
-            </div>
+        <div class="logo">
+          <img class="logoImg" src="img/logo.png">
         </div>
-        <!--contenedor de texto encriptado-->
-        <div class="encriptado">
-            <img src="img/Muñeco.png" alt="" id="muñeco" />
-            <div class="mensaje-encriptado" id="mensaje-encriptado">
-                <h2 id="titulo-mensaje">Ningún mensaje fue encontrado</h2>
-                <p id="parrafo">
-                    Ingresa el texto que deseas encriptar o desencriptar
-                </p>
-            </div>
+        <div class="left">
+            <input class="text-input" type="text" name="input-texto" id="inputtexto" placeholder="Ingrese el texto aqui">
         </div>
-    </div>
+        <div class="right">
+          <img src="img/Muñeco.png" id="imgDer">
+          <h1 id="texto">Ningún mensaje fue encontrado</h1>
+          <textarea id="texto2" name="name" rows="8" cols="80">Ingresa el texto que desees encriptar o desenciptar.</textarea>
+          <button type="button" id="copiar" onclick="copiar()">¡Copiar!</button>
+        </div>
+        <div class="left-button">
+          <p>Sólo letra minusculas y sin acento</p>
+          <button type="button" id="btn-encriptar" onclick="encriptar()">Encriptar</button>
+          <button type="button" id="btn-desencriptar" onclick="desencriptar()">desencriptar!</button>
+        </div>
+      </div>
 </body>
 
 </html>
